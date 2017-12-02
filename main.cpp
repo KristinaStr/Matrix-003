@@ -29,11 +29,11 @@ bool ReadNameOfFileAndOper(string & name1, char & op, string & name2)
 	return f;
 }
 
-bool ReadFileData(float ** & matrix, int & rows, int & columns, string s) 
+bool ReadFileData(float ** & matrix, int & rows, int & columns, string name) 
 {
 	char op;
 	ifstream fin;
-	fin.open(s.c_str());
+	fin.open(name.c_str());
 	if (!fin.is_open()) 
 	{
 		cout << "file isn't opened" << endl;
